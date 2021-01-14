@@ -1,0 +1,43 @@
+{
+    "name": "creativeorange/mailinliner-craft3",
+    "description": "Convert CSS to inline styles",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "mail inliner"
+    ],
+    "support": {
+        "docs": "https://github.com/creativeorange/mail-inliner/blob/master/README.md",
+        "issues": "https://github.com/creativeorange/mail-inliner/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Creativeorange",
+            "homepage": "https://www.creativeorange.nl"
+        }
+    ],
+    "require": {
+        "tijsverkoyen/css-to-inline-styles": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+          "creativeorange\\craft\\mailinliner\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Mail Inliner",
+        "handle": "mailinliner",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/creativeorange/mailinliner-craft3/master/CHANGELOG.md",
+        "components": {
+            "mailInlinerService": "creativeorange\\craft\\mailinliner\\services\\MailInlinerService"
+        },
+        "class": "creativeorange\\craft\\mailinliner\\MailInliner"
+    }
+}

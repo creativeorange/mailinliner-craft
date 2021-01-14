@@ -1,0 +1,1 @@
+{"pluginName":"Mail Inliner","pluginDescription":"Convert CSS to inline styles","pluginVersion":"1.0.0","pluginAuthorName":"Creativeorange","pluginVendorName":"creativeorange","pluginAuthorUrl":"https://www.creativeorange.nl","pluginAuthorGithub":"creativeorange","codeComments":[],"pluginComponents":["services","twigextensions"],"serviceName":"","apiVersion":"api_version_3_0"}

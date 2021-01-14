@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="577px" height="577px" viewBox="0 0 577 577" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+	<title>Group</title>
+	<desc>Created with Sketch.</desc>
+	<defs>
+		<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+			<stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+			<stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+		</linearGradient>
+		<circle id="path-2" cx="288.5" cy="288.5" r="288.5"></circle>
+	</defs>
+	<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g id="Group">
+			<g id="Oval">
+				<use fill="#212121" xlink:href="#path-2"></use>
+				<use fill-opacity="0.200000003" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+			</g>
+			<text id="style=“”" font-family="Menlo-Regular, Menlo" font-size="106" font-weight="normal">
+				<tspan x="33.2304688" y="317" fill="#FFCB6B">style=</tspan>
+				<tspan x="416.134766" y="317" fill="#C3E88D">“”</tspan>
+			</text>
+		</g>
+	</g>
+</svg>
