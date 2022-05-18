@@ -14,13 +14,14 @@ use creativeorange\craft\mailinliner\MailInliner;
 
 use Craft;
 use creativeorange\craft\mailinliner\twigextensions\TokenParser\MailInliner_TokenParser;
+use Twig\Extension\AbstractExtension;
 
 /**
  * @author    Creativeorange
  * @package   MailInliner
  * @since     0.1.0
  */
-class MailInlinerTwigExtension extends \Twig_Extension
+class MailInlinerTwigExtension extends AbstractExtension
 {
     /**
      * @inheritdoc

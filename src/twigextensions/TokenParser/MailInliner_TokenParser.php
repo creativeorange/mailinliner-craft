@@ -3,31 +3,32 @@
 namespace creativeorange\craft\mailinliner\twigextensions\TokenParser;
 
 use creativeorange\craft\mailinliner\twigextensions\Node\MailInliner_Node;
+use Twig\Token;
+use Twig\TokenParser\AbstractTokenParser;
 use Twig_Error_Syntax;
 use Twig_NodeInterface;
-use Twig_Token;
 
-class MailInliner_TokenParser extends \Twig_TokenParser
+class MailInliner_TokenParser extends AbstractTokenParser
 {
     /**
      * Parses a token and returns a node.
      *
-     * @param Twig_Token $token A Twig_Token instance
+     * @param Token $token A Token instance
      *
      * @return MailInliner_Node A Twig_NodeInterface instance
      *
      * @throws Twig_Error_Syntax
      */
-    public function parse(Twig_Token $token)
+    public function parse(Token $token)
     {
         $lineNo = $token->getLine();
         $stream = $this->parser->getStream();
 
-        $stream->expect(\Twig_Token::BLOCK_END_TYPE);
+        $stream->expect(Token::BLOCK_END_TYPE);
 
         $nodes['body'] = $this->parser->subparse(array($this, 'decideMailInlinerEnd'), true);
 
-        $stream->expect(\Twig_Token::BLOCK_END_TYPE);
+        $stream->expect(Token::BLOCK_END_TYPE);
 
         return new MailInliner_Node($nodes, [], $lineNo, $this->getTag());
     }
@@ -42,7 +43,7 @@ class MailInliner_TokenParser extends \Twig_TokenParser
         return 'mailinliner';
     }
 
-    public function decideMailInlinerEnd(\Twig_Token $token)
+    public function decideMailInlinerEnd(Token $token)
     {
         return $token->test('endmailinliner');
     }
