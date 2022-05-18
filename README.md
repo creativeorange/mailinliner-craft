@@ -1,3 +1,3 @@
-# Mail Inliner plugin for Craft CMS 3.x
+# Mail Inliner plugin for Craft CMS
 
 Wrap your email template between ```{% mailinliner %}``` and ```{% endmailinliner %}```
